@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAuth Redirect</title>
+</head>
+<body>
+  <h1>Instagram OAuth Redirect</h1>
+  <p>Authentication successful. You can close this page.</p>
+  <script>
+    // Process the URL parameters here
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    console.log('Authorization code:', code);
+    // You can send the code to your server or process it further
+  </script>
+</body>
+</html>
